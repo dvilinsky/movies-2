@@ -79,18 +79,18 @@ class MovieData
     percentages = {1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 =>0}
     sum_of_ratings = 0
     movie_ratings.each do |rating|
-      sum_of_rataings += rating
+      sum_of_ratings += rating
       percentages[rating] += 1
     end
     percentages.each do |rating, amount|
       percentages[rating] = amount/movie_ratings.length.to_f
     end
     if percentages[1] + percentages[2] > percentages[4] + percentages[5]
-      sum -= (25 * (percentages[1] + percentages[2]))
+      sum_of_ratings -= (25 * (percentages[1] + percentages[2]))
     else
-      sum += (25 * (percentages[4] + percentages[5]))
+      sum_of_ratings += (25 * (percentages[4] + percentages[5]))
     end
-    return sum
+    return sum_of_ratings
   end
 
   #calls self.popularity on all the movies in the array, then sorts in descending order
