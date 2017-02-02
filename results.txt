@@ -1,0 +1,13 @@
+2017-02-02 00:12:33 -0500
+
+errors.size is 20000
+Total predictions is 20000
+Total wrong is 8542
+So, the percent I got wrong is 0.4271
+
+The average of the error in prediction is 0.5859
+
+The standard deviation of that is 0.8102184968886598
+
+The standard error is 0.00572910993392743
+2017-02-02 00:17:39 -0500
